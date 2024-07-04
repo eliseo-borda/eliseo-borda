@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras del Supermercado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-success text-white py-4">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="imagenes/pngbolsadecompras.png" alt="bolsa del super" width="50" class="mr-3">
+                <h1 class="h3 mb-0 ">Lista de Compras del Supermercado</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-4">
+        <p class="text-center ">
+            Bienvenido a nuestra webapp para gestionar tu lista de compras del supermercado. Aquí podrás agregar, visualizar y administrar los productos que necesitas comprar de manera sencilla y sin que nada se borre. 
+        </p>
+    </div>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="input-group mb-4">
+                    <input type="text" id="nueva-compra" class="form-control" placeholder="Agregar nuevo producto">
+                    <div class="input-group-append">
+                        <button id="agregar-btn" class="btn-round btn-success">Agregar</button>
+                    </div>
+                </div>
+                <ul id="lista-compras" class="list-group"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-success text-white text-center py-4">
+        <button id="info-btn" class="btn-round btn-warning">Info</button>
+        <div id="info" class="d-none mt-4">
+            <p>Carrera: Diseño Multimedial</p>
+            <p>Materia: Diseño y Programación Web</p>
+            <p>Turno: Mañana</p>
+            <p>Comisión: DMM3CP</p>
+            <p>Año: 2024</p>
+            <p>Alumno: Eliseo Borda</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><img src="imagenes/93A1A99E-802E-40F6-A738-0A80F2DBB743.JPG" alt="Foto" class="img-thumbnail" width="100"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
